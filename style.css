@@ -18,19 +18,28 @@ a {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
+header div img {
+    height: 60px;
+}
 header ul {
     display: flex;
     justify-content: space-evenly;
-    
+    padding-left: 100px;
 }
 
 header ul li {
     padding: 10px;
+    border-right:  1px solid snow;
+}
+
+header ul li:last-child {
+    padding: 10px;
+    border-right: 0px solid snow;
 }
 
 body {
@@ -52,6 +61,10 @@ body {
 #about p{
     max-width: 500px;
     margin: 0 auto;
+}
+
+hr {
+    margin: 10px;
 }
 
 .form {
