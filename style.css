@@ -42,6 +42,11 @@ header ul li:last-child {
     border-right: 0px solid snow;
 }
 
+header ul li a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
 body {
     height: 110vh;
     background: linear-gradient(180deg, darkslategray , rgb(0, 0, 0) );
@@ -56,6 +61,33 @@ body {
 
 .container h5 {
     font-size: 15px;
+}
+
+#arrow {
+    font-size: 20px;
+    cursor: pointer;
+    animation: grow 1s steps(2, start) infinite;
+    max-height: 25px;
+}
+
+@keyframes grow {
+    to {
+        font-size: 25px;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.showup {
+    display: block !important;
+    transition: 300ms;
+}
+
+#giro {
+    transition: 300ms;
 }
 
 #about p{
@@ -74,9 +106,22 @@ hr {
 
 .form input {
     width: 50%;
+    height: 20px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 10px;
 }
 
 .form button {
     width: 15%;
+    height: 20px;
     background-color: darkslategray;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -3px;
+}
+
+.form button:hover {
+    background-color: darkcyan;
 }

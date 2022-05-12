@@ -37,11 +37,11 @@
                 <h5>Developer | Data Specialist </h5>
             </div>
 
-            <div id="arrouw">
-                <i class="fa-solid fa-angle-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="giro" class="fa-solid fa-angle-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus pariatur harum nisi nulla asperiores fuga repellendus. Corporis voluptates corrupti temporibus optio porro similique minima itaque architecto enim, voluptate iusto.
                 </p>
@@ -60,5 +60,14 @@
             </div>
         </section>
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('giro');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('showup')
+        }
+    </script>
 </body>
 </html>
